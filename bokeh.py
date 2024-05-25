@@ -71,7 +71,10 @@ plt.show()
 
 
 # Write tables and plot to Markdown file
-with open('depth_of_field_info.md', 'w') as file:
+with open('depth_of_field_example.md', 'w') as file:
+    file.write("# EXAMPLE: Canon Canonet QL17 GIII\n")
+    file.write("FL: 40mm, F/1.7-28, Distance:0.5-20m\n")
+    
     file.write("### Near Points (m):\n\n")
     file.write(near_df.to_markdown())
     file.write("\n\n### Far Points (m):\n\n")

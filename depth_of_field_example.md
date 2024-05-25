@@ -1,3 +1,5 @@
+# EXAMPLE: Canon Canonet QL17 GIII
+FL: 40mm, F/1.7-28, Distance:0.5-20m
 ### Near Points (m):
 
 |   Distance (m) |   1.7 |   2.0 |   2.8 |   4.0 |   5.6 |   8.0 |   11.0 |   16.0 |   22.0 |   28.0 |
