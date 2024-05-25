@@ -31,8 +31,8 @@ for D in distances:
         H = hyperfocal_distance(f, N, CoC)
         D_n = near_point(H, D, f)
         D_f = far_point(H, D, f)
-        near_row.append(D_n)
-        far_row.append(D_f)
+        near_row.append(round(D_n,2))
+        far_row.append(round(D_f,2))
     near_data.append(near_row)
     far_data.append(far_row)
 
