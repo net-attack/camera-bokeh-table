@@ -62,7 +62,20 @@ plt.ylabel('Distance (m)')
 plt.title('Near and Far Points vs. Aperture for Various Distances')
 plt.legend()
 plt.grid(True)
-plt.gca().invert_xaxis()  # Aperture increases, Near and Far Points adjust accordingly
-plt.yscale('log')  # Log scale to handle large values
+
+#plt.gca().invert_xaxis()  # Aperture increases, Near and Far Points adjust accordingly
+#plt.yscale('log')  # Log scale to handle large values
+plt.ylim(0,30)
 plt.savefig('near_and_far_points_cheatsheet.png', dpi=300)
 plt.show()
+
+
+# Write tables and plot to Markdown file
+with open('depth_of_field_info.md', 'w') as file:
+    file.write("### Near Points (m):\n\n")
+    file.write(near_df.to_markdown())
+    file.write("\n\n### Far Points (m):\n\n")
+    file.write(far_df.to_markdown())
+    file.write("\n\n### Plot:\n\n")
+    file.write("![Near and Far Points Plot](near_and_far_points_plot.png)\n\n")
+    file.write("**Near and Far Points Plot**\n\n")
