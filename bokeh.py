@@ -77,5 +77,5 @@ with open('depth_of_field_info.md', 'w') as file:
     file.write("\n\n### Far Points (m):\n\n")
     file.write(far_df.to_markdown())
     file.write("\n\n### Plot:\n\n")
-    file.write("![Near and Far Points Plot](near_and_far_points_plot.png)\n\n")
+    file.write("![Near and Far Points Plot](near_and_far_points_cheatsheet.png)\n\n")
     file.write("**Near and Far Points Plot**\n\n")

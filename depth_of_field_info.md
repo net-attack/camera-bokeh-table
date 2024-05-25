@@ -22,7 +22,7 @@
 
 ### Plot:
 
-![Near and Far Points Plot](near_and_far_points_plot.png)
+![Near and Far Points Plot](near_and_far_points_cheatsheet.png)
 
 **Near and Far Points Plot**
 
